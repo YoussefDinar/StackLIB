@@ -2,16 +2,26 @@
 //
 
 #include <iostream>
+
 #include "Stack.h"
 int main()
 {
-    Stack s;
-    Node n = 8;
-    s.push(&n);
-    s.print_stack();
-    int x;
-    std::cin>>x;
-    std::cout << "Hello World!\n";
+
+
+
+
+    Stack<int> *s=new Stack<int>();
+    Node<int>* n1 = new Node<int>(1);
+    Node<int>* n2 = new Node<int>(2);
+    Node<int>* n3 = new Node<int>(3);
+
+
+    s->push(n1);
+    s->push(n2);
+    s->push(n3);
+
+    s->print_stack();
+   
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
